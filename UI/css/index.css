@@ -1,0 +1,84 @@
+/*@font-face {*/
+/*    font-family: "lemonMilk";*/
+/*    src: url(source/LemonMilk.otf);*/
+/*}*/
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.row{
+    display: flex;
+    
+}
+.container{
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    
+}
+.col1 {
+    width: 100%;
+    height: auto;
+}
+body{
+    margin:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000000;
+    /*background-color: ffbf00;*/
+    background: url("../css/source/background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right top;
+    background-attachment: fixed;
+    position: relative;
+    height: 100%;
+    
+}
+
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 40%;
+    
+    
+}
+/*.img2 {*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    margin-top: 2em;*/
+/*    width: 50%;*/
+/*}*/
+
+span {
+    font-family: Verdana;
+    font-weight: bold;
+}
+#footer {
+    bottom: 0px;
+    height: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    position: absolute;
+    display: block;
+    font-weight: bold;
+    color:white;
+}
+.hide{
+    display: none;
+}
+.clearfooter {
+    height: 3em;
+    clear: both;
+}
+
+

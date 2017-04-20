@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+      
+        <title>Farkas Zsolt's Blog</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row background" >
+                <div class="column col2 center">
+                    <img src="../css/source/farkas_blog.png" id="logo"></img>
+                </div>
+                <div class="column col3 ">
+                    <input type="text" name="search" id="search" class="box" placeholder="Search"/>
+                    <button class="box" id="search_btn">Search</button> 
+                </div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/index.html" id="home">Home</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesHeader">Articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a></div>
+                <div class="column headerCol"> <a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html" id="createAccount">Create account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/contact.html" id="contact">Contact</a></div>
+                <div class="column headerCol signin-out"> 
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/signin.html" id="signin_txt">Sign in</a>
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" class="hide" id="signout_txt">Sign out</a>
+                </div>
+              
+            </div>
+            <div class="row" >
+                <div class="column col5"></div>
+                <div class="column col6">
+                    
+                    
+                
+                
+                    
+                    <div class="articleContainer">
+                        <div class="row">
+                            <div class="titleDiv"><h3 class="title">Contact</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="contentDiv1"><input type="email" name="email" id="email" class="box2" placeholder="E-mail adress" /><br><input type="textarea" row="10" placeholder="Message" class="textarea box2" name="content" id="content" /></div>
+                        </div>
+                        <div class="row">
+                            <div class="horizontalSeparator"></div>
+                            <div class="viewArt2" id="comments"><input type="button" class="box2" name="send" id="send" value="Send"/></div>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                </div>
+                <div class="column col7"></div>
+            </div>
+        </div>
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+        <!--<script type="text/javascript" src="../models/Article.js"></script>-->
+        <script type="text/javascript" src="../models/Contact.js"></script>
+        <script type="text/javascript" src="../views/contact.js"></script>
+        <script type="text/javascript" src="../views/script.js"></script>
+    </body>
+</html>

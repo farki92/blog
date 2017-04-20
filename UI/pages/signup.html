@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+        <link rel="stylesheet" href="../css/login.css" type="text/css" />
+    
+        <title>Farkas Zsolt's Blog</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row background" >
+                 <div class="column col2 center">
+                    <img src="../css/source/farkas_blog.png" id="logo"></img>
+                </div>
+                <div class="column col3 ">
+                    <input type="text" name="search" id="search" class="box" placeholder="Search"/>
+                    <button class="box" id="search_btn">Search</button> 
+                </div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/index.html" id="home">Home</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesHeader">Articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html" id="createAccount">Create account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/contact.html" id="contact">Contact</a></div>
+                <div class="column headerCol signin-out"> 
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/signin.html" id="signin_txt">Sign in</a>
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" class="hide" id="signout_txt">Sign out</a>
+                </div>
+            </div>
+            <!--<div class="row">-->
+            <!--    <div class="column colLogin">-->
+            <!--        <div class="column col7 hide background" id="menu">-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/index.html" id="home">Home</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html">Create account</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesMenu">Articles</a><br>-->
+            <!--        <a>Contact</a>-->
+
+            <!--    </div>-->
+            <!--    </div>-->
+            <!--</div>-->
+            <div class="row">
+                <div class="column colLogin"><img src="../css/source/sign_up.png" id="login"></img></div>
+                </div>
+            <div class="row" >
+                <div class="column col1Login"></div>
+                <div class="column col2Login">
+                
+                    <section class="loginLogin">
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" name="email" placeholder="E-mail" class="boxLogin" required id="newEmail"/><br>
+                        <label for="pass">Password:</label><br>
+                        <input type="password" name="pass" placeholder="Password" class="boxLogin" required id="newPass"/><br>
+                        <input type="password" name="repass" placeholder="Retype password" class="boxLogin" required id="rePass"/><br>
+                        <button id="createAccount_btn" class="boxLogin">Create account</button>
+                        <p id="invalid" class="alertLogin"></p>
+                    </section>
+                    
+                </div>
+                <div class="column col3Login"></div>
+            </div>
+        
+        </div>
+        
+        
+        
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="../models/Account.js"></script>
+        <script type="text/javascript" src="../models/Login.js"></script>
+        <script type="text/javascript" src="../views/account.js"></script>
+        <script type="text/javascript" src="../views/login.js"></script>
+        <script type="text/javascript" src="../views/script.js"></script>
+    </body>
+</html>

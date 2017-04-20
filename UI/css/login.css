@@ -1,0 +1,93 @@
+/*@font-face {*/
+/*    font-family: "lemonMilk";*/
+/*    src: url(source/LemonMilk.otf);*/
+/*}*/
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.row{
+    display: flex;
+    
+}
+.column {
+    float: left;
+    margin:0;
+}
+
+.container{
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    margin-bottom: -3em;
+}
+
+body {
+    margin:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000000;
+    /*background-color: ffbf00;*/
+    background: url("../css/source/background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right top;
+    background-attachment: fixed;
+    position: relative;
+    height: 100%;
+}
+.col1Login, .col3Login {
+    width: 43%;
+}
+.col2Login {
+    width: 14%;
+    /*background-color: white;*/
+    text-align: center;
+    height: auto;
+    border-radius: 1em;
+    background: rgba(255,255,255, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    min-width: 15em;
+
+}
+.colLogin {
+    width: 100%;
+    height: auto;
+    /*margin: 5px;*/
+}
+#login {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+    margin-bottom: 2em;
+    width: 15%;
+    min-width:15em;
+}
+.loginLogin {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.alertLogin {
+    color:red;
+}
+.hideLogin {
+    display:none;
+}
+.boxLogin{
+    border:0;
+    padding:7px;
+    background-color:rgba(255,255,255, 0.7);
+    margin:10px;
+    border-radius:5px;
+    font-size:1em;
+    width: auto;
+}
+#menu{
+    margin:5px;
+}

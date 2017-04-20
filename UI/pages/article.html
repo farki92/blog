@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+      
+        <title>Farkas Zsolt's Blog</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row background" >
+                 <div class="column col2 center">
+                    <img src="../css/source/farkas_blog.png" id="logo"></img>
+                </div>
+                <div class="column col3 ">
+                    <input type="text" name="search" id="search" class="box" placeholder="Search"/>
+                    <button class="box" id="search_btn">Search</button> 
+                </div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/index.html" id="home">Home</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesHeader">Articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a></div>
+                <div class="column headerCol"> <a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html" id="createAccount">Create account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/contact.html" id="contact">Contact</a></div>
+                <div class="column headerCol signin-out"> 
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/signin.html" id="signin_txt">Sign in</a>
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" class="hide" id="signout_txt">Sign out</a>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="column col5"></div>
+                <div class="column col6" id="article">
+                    
+                    
+                    <!--<ul id="articles"></ul>-->
+                    
+                    <!--template-->
+                    
+                    <!--<div class="articleContainer">-->
+                    <!--    <div class="row">-->
+                    <!--        <div class="titleDiv"><h3 class="title">Title</h3></div>-->
+                    <!--    </div>-->
+                    <!--    <div class="row">-->
+                    <!--        <div class="imageDiv"><img src="http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-full-hd-1920-1080-widescreen-awesome/z-wallpaper-detailed-waterdrops-1920-x-1080-full-hd.jpg" class="artImage"></img></div>-->
+                    <!--        <div class="verticalSeparator"></div>-->
+                    <!--        <div class="contentDiv"><p class="content">CONTENT</p></div>-->
+                    <!--    </div>-->
+                    <!--    <div class="row">-->
+                    <!--        <div class="horizontalSeparator"></div>-->
+                    <!--        <div class="viewArt" id="comments"><a href="#">Comments</a></div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    
+                    
+                    <!--template-->
+                </div>
+                <div class="column col7"></div>
+                
+                
+                
+                
+                <!--<div class="column col7 hide background" id="menu">-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/index.html" id="home">Home</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html">Create account</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesMenu">Articles</a><br>-->
+                <!--    <a>Contact</a>-->
+
+                <!--</div>-->
+            </div>
+            <div class="row" >
+                <div class="column col5"></div>
+                <div class="column col6" id="commentsContainer">
+                        <div class="row">
+                            <div class="titleDiv"><h3 class="title center">Comments</h3></div>
+                        </div>
+                    <div class="articleContainer background2">   
+                    <div class="row">
+                         <input type="text" class="box2 center" name="comment" id="comment_title" placeholder="Title"/>
+                    </div>
+                    <div class="row">
+                         <input type="textarea" class="box2 center commentWidth" name="comment" id="write_comment" placeholder="Comment"/>
+                    </div>
+                    <div class="row center">
+                    
+                        <div class="deleteDiv right"><input type="button" name="submit" id="submit_comment" class="box2" value="Submit"/></div>
+                    </div>
+                        
+                        <!--<div class="row">-->
+                            <!--template-->
+                            <!--<div class="deleteDiv background2" >-->
+                            <!--    <p class="content2">NAME-- Title -- TIME</p>-->
+                            <!--    <p class="content">fgsahjdkfhudkfduajkgkdfdjugkfhuejkfehfdgjkg feouhgjkfeoijukdofdjgnb</p>-->
+                            <!--</div>-->
+                            <!--template-->
+                            
+                        <!--</div>-->
+                        <!--<div class="row" id="deleteButtonCont">-->
+                            <!--template-->
+
+                            <!--<div class="deleteDiv right" id="comments"><input type="button" name="delete" id="deleteCommNr" class="box2" value="Delete"/></div>-->
+                            <!--template-->
+
+                        <!--</div>-->
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+                <div class="column col7"></div>
+        </div>
+        
+        
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+        <!--<script type="text/javascript" src="../models/Article.js"></script>-->
+        <script type="text/javascript" src="../models/Articles.js"></script>
+        <script type="text/javascript" src="../models/Comments.js"></script>
+        <script type="text/javascript" src="../models/Account.js"></script>
+        <script type="text/javascript" src="../views/article.js"></script>
+        <script type="text/javascript" src="../views/comments.js"></script>
+        <script type="text/javascript" src="../views/script.js"></script>
+    </body>
+</html>

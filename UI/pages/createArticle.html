@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+        
+        <title>Farkas Zsolt's Blog</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row background" >
+                 <div class="column col2 center">
+                    <img src="../css/source/farkas_blog.png" id="logo"></img>
+                </div>
+                <div class="column col3 ">
+                    <input type="text" name="search" id="search" class="box" placeholder="Search"/>
+                    <button class="box" id="search_btn">Search</button> 
+                </div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/index.html" id="home">Home</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesHeader">Articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html" id="createAccount">Create account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/contact.html" id="contact">Contact</a></div>
+                <div class="column headerCol signin-out"> 
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/signin.html" id="signin_txt">Sign in</a>
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" class="hide" id="signout_txt">Sign out</a>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="column col5"></div>
+                <div class="column col6 background">
+                    <h3 class="title">Write new article</h3>
+                    
+                    <div class="createArticleContainer">
+                        <div class="row">
+                            <div class="titleDiv"><input type="text" name="title" class="box2" placeholder="Article Title"/>Category:
+                                <select class="box2" id="category">
+                                  <option value="1">Test</option>
+                                  <option value="2">Fun</option>
+                                  <option value="3">Animals</option>
+                                  <option value="4">Humans</option>
+                                  <option value="5">Objects</option>
+                                  <option value="6">Food</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="imageDiv"><label for="main_image_url" class="title">Article image:</label><input type="file" accept="image/*" id="article_file" name="main_image_url" class="box2"></div>
+                            <div class="verticalSeparator"></div>
+                            <div class="contentDiv"><textarea name="content" class="box textarea" placeholder="Article content"></textarea></div>
+                        </div>
+                        <div class="row">
+                            <div class="horizontalSeparator"></div>
+                            <div class="viewArt" id="comments"><p id="save_article">Save</p></div>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+                <div class="column col7"></div>
+                <!--<div class="column col7 hide background" id="menu">-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/index.html" id="home">Home</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html">Create account</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a><br>-->
+                <!--    <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesMenu">Articles</a><br>-->
+                <!--    <a>Contact</a>-->
+
+                <!--</div>-->
+            </div>
+        </div>
+        
+        
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="../models/Article.js"></script>
+        <script type="text/javascript" src="../models/Articles.js"></script>
+        <script type="text/javascript" src="../views/newArticle.js"></script>
+        <script type="text/javascript" src="../views/script.js"></script>
+        <script type="text/javascript" src="../views/articles.js"></script>
+    </body>
+</html>

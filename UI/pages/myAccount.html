@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+      
+        <title>Farkas Zsolt's Blog</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row background" >
+                <div class="column col2 center">
+                    <img src="../css/source/farkas_blog.png" id="logo"></img>
+                </div>
+                <div class="column col3 ">
+                    <input type="text" name="search" id="search" class="box" placeholder="Search"/>
+                    <button class="box" id="search_btn">Search</button> 
+                </div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/index.html" id="home">Home</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesHeader">Articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a></div>
+                <div class="column headerCol"> <a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html" id="createAccount">Create account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a></div>
+                <div class="column headerCol"><a href="https://web9-farki92.c9users.io/blog/UI/pages/contact.html" id="contact">Contact</a></div>
+                <div class="column headerCol signin-out"> 
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/signin.html" id="signin_txt">Sign in</a>
+                    <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" class="hide" id="signout_txt">Sign out</a>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="column col5"></div>
+                <div class="column col6 background" id="myAccountContainer">
+                    
+
+                    <div class="articleContainer">
+                        <div class="row">
+                            <div class="titleDiv" style="text-align: center" id="myAccountTitle"></div>
+                        </div>
+                        <div class="row">
+                            <div class="contentDiv3">
+                                <!--get user information-->
+                                <div class="row">
+                                    <div class="imageDiv" id="profile_picture_container"> </div>
+                                    <div class="imageDiv2"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="imageDiv">
+                                    <p class="title">First name:</p>
+                                    <p class="title">Last name:</p>
+                                    <p class="title">E-mail adress:</p>
+                                    <p class="title">Gender:</p>
+                                    <p class="title">Nick name:</p>
+                                    <p class="title">Age:</p>
+                                    </div>
+                                    <div class="imageDiv2" id="user_info_container">
+                                    <!--<p id="firstName" class="title"></p>-->
+                                    <!--<p id="lastName" class="title"></p>-->
+                                    <!--<p id="emailAdress" class="title"></p>-->
+                                    <!--<p id="nem" class="title"></p>-->
+                                    <!--<p id="nickName" class="title"></p>-->
+                                    </div>
+                                    
+                                </div>
+                               
+                                
+                                
+                                <!--get user information-->
+                            
+
+                            </div>
+                            <div class="contentDiv4">
+                                <!--update user information-->
+                                <input type="file" name="profile_picture" accept="image/*" class=" title" id="profile_picture"/>
+                                <input type="text" name="first_name" class="box3 title" id="first_name" placeholder="First name"/><br>
+                                <input type="text" name="last_name" class="box3 title" id="last_name" placeholder="Last name"/><br>
+                                <input type="text" name="email" class="box3 title" id="email" placeholder="E-mail adress"/><br>
+                                <select id="gender" class="box3 title">
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select><br>
+                                <input type="text" name="email" class="box3 title" id="nick_name" placeholder="Nick name"/><br>
+                                <input type="number" name="age" class="box3 title" id="age" placeholder="Age"/><br>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="separator"></div> 
+                            <div class="viewArt2" ><input type="button" name="updateButton" class="box" value="Update" id="update"/></div>
+                    </div>
+                    
+    
+                </div>
+                
+                </div>
+                <div class="column col7"></div>
+            <!--    <div class="column col7 hide background" id="menu">-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html">Home</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/signup.html">Create account</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/createArticle.html" id="createArticle">Create article</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/myAccount.html" id="myAccount">My account</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/myArticles.html" id="myArticles">My articles</a><br>-->
+            <!--        <a href="https://web9-farki92.c9users.io/blog/UI/pages/articles.html" id="articlesMenu">Articles</a><br>-->
+            <!--        <a>Contact</a>-->
+
+            <!--</div>-->
+        </div>
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="../models/Account.js"></script>
+        <script type="text/javascript" src="../views/account.js"></script>
+        <script type="text/javascript" src="../views/script.js"></script>
+    </body>
+</html>
