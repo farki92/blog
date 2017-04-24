@@ -37,25 +37,9 @@ Articles.prototype.getAll = function() {
 };
 
 Articles.prototype.removeArticle = function(articleId) {
-
-	
-	var config = {
-		url: "https://web9-farki92.c9users.io/blog/api/articles/delete",
-		method: "POST",
-		data: {
-			id: articleId,
-		},
-		processData:false,      
-		contentType: false,
-		success: function(resp) {
-			console.log("all good");
-		},
-		error: function() {
-			console.log("article was not deleted");
-		}
-	}
-	
-	return $.ajax(config);
+	//here we will search for article model by id
+	//and we remove it from models array and from 
+	//server/localStorage
 };
 
 Articles.prototype.save = function(articleData) {
@@ -73,6 +57,7 @@ Articles.prototype.save = function(articleData) {
 		url: "https://web9-farki92.c9users.io/blog/api/articles/add",
 		method: "POST",
 		data: formData,
+		processData:false,        // To send DOMDocument or non processed data file it is set to false
 		contentType: false,
 		success: function(resp) {
 			console.log("all good");
@@ -99,7 +84,7 @@ Articles.prototype.update = function(articleData) {
 		url: "https://web9-farki92.c9users.io/blog/api/articles/edit",
 		method: "POST",
 		data: formData,
-		processData:false,       
+		processData:false,        // To send DOMDocument or non processed data file it is set to false
 		contentType: false,
 		success: function(resp) {
 			console.log("all good");
